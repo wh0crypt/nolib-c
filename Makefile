@@ -23,6 +23,6 @@ $(FOLDER)/%: $(FOLDER)/%.c
 
 clean:
 	@echo "Cleaning binaries and non-source files..."
-	@find $(FOLDER) -type f ! -name "*.c" ! -name "Makefile" -delete
+	@find $(FOLDER) -type f -executable ! -name "*.c" -delete
 
 .PHONY: all clean
